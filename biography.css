@@ -1,0 +1,218 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+
+.header {
+  color: white;
+  font-size:200%;
+  background-color: #003844;
+  text-align: center;
+  padding: 20px;
+  border: 5px double white;
+  padding-bottom: 20px;
+}
+
+/*The whole ass navigation bar*/
+
+ul {
+  list-style-type: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #CEBEBE;
+}
+
+li {
+  display: inline;
+}
+
+/* The container - needed to position the dropdown content */
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #735D78;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #D5B9B2;
+ 
+} 
+
+li.dropdown {
+  display:inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: fixed;   /* positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+  background-color: #D5B9B2;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: LemonChiffon;}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+}
+/*Navigation Bar Transition*/
+div, h2, img {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.three {
+  background-color: #FBE2A9;
+  border: 5px solid #735D78;
+  outline: 5px solid transparent;
+}
+.three:hover {
+  outline: 5px solid #D5B9B2;
+  outline-offset: 5px;
+}
+
+/*Basic html schtuff*/
+
+body {
+		
+		background-color: #ECE2D0;
+		
+
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 19pt;
+		font-weight: 300;
+		line-height: 1.75em;
+		color: #888;	
+
+}
+
+p {
+	background-image: url("https://m.media-amazon.com/images/I/71K1oTKwQGL._AC_UF894,1000_QL80_DpWeblab_.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+background-attachment: scroll;
+  height: 200px;
+  width: 500px;
+  margin: 100px auto;
+  position: relative;
+  
+}
+
+img {
+  height: 100px;
+  position: absolute;
+  left: 0;
+  offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
+  box-shadow: 1px 1px 3px #0008;
+  transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
+  z-index: 0;
+}
+
+img:hover {
+  transform: scale(3);
+  /* on hover, the path gets a bit shorter & flattened & shifted to left/bottom a bit for nicer movement */
+  offset-path: path('m 5 65 q 45-0 90-0 t 90 0 90 0 90-0 90 0');
+  box-shadow: 3px 4px 10px #0006;
+  /* ensures that image gets on top of stack at the start of "popping" animation
+     and gets back at the end of getting back. With smaller value, 2 different transitions would be needed */
+  z-index: 999;
+}
+
+/* 3 images */
+img:nth-last-child(3):first-child {
+  offset-distance: 17%;
+}
+img:nth-last-child(2):nth-child(2) {
+  offset-distance: 49%;
+}
+img:last-child:nth-child(3) {
+  offset-distance: 81%;
+}
+
+/* 4 images */
+img:nth-last-child(4):first-child {
+  offset-distance: 10%;
+}
+img:nth-last-child(3):nth-child(2) {
+  offset-distance: 35%;
+}
+img:nth-last-child(2):nth-child(3) {
+  offset-distance: 65%;
+}
+img:last-child:nth-child(4) {
+  offset-distance: 90%;
+}
+
+/* 5 images */
+img:nth-last-child(5):first-child {
+  offset-distance: 0%;
+}
+img:nth-last-child(4):nth-child(2) {
+  offset-distance: 25%;
+}
+img:nth-last-child(3):nth-child(3) {
+  offset-distance: 51%;
+}
+img:nth-last-child(2):nth-child(4) {
+  offset-distance: 75%;
+}
+img:last-child:nth-child(5) {
+  offset-distance: 100%;
+}
+
+
+h6  {
+	font: inherit;
+	font-size: 20px;
+	float: left;
+	background-color: white;
+	margin-right: 1200px;
+	margin-left: 50px;
+}
+
+h5  {
+	font: inherit;
+	font-size: 20px;
+	float: right;
+	background-color: white;
+	margin-right: 50px;
+	margin-left: 1200px;
+}
+
+.meowWolf
+{
+	float: left;
+	padding-left: 75px;
+}
+
+.normalLife
+{
+	float: right;
+	padding-left: 200px;
+	
+}
+
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+   position: fixed;
+  left: 0;
+  bottom: 0;
+}
