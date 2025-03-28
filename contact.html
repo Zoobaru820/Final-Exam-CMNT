@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/stylesheets/contact.css">
+</head>
+<style>
+form {
+  padding: 1.5rem;
+  border-radius: 3px;
+  background-color: #eee;
+}
+label {
+  font-weight: 500;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+</style>
+
+<body>
+<div class="header">
+Contact Me!</div>
+
+<div class="three"><kbd>
+<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="aboutMe.html">About Me</a></li>
+  <li><a href="biography.html">Biography</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact Me</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Social Medias!</a>
+    <div class="dropdown-content">
+      <a href="https://www.instagram.com/zoobiedoo820/?igsh=ZGN5NGgxaXdwam0z&utm_source=qr">Instagram</a>
+      <a href="https://m.facebook.com/profile.php?id=100024755714990">Facebook</a>
+    </div>
+  </li>
+</ul>
+</kbd></div>
+
+<p>Do you want to contact me? Have any inquiries or questions? Have any feedback for my site? Fill out this form and I'll get back to you! Thank you for your time!</p>
+
+<!--Form Time-->
+<center>
+  <form action="http://mstc.brentapresley.com/HTMLFormTest.php" 
+target="_blank" method="GET">
+
+<!--Dropdown-->
+<label for="page">What was your favorite page?</label>
+  <select id="page" name="page">
+    <option value="home">Home</option>
+    <option value="about">About Me</option>
+    <option value="biography">Biography</option>
+    <option value="resume">Resume</option>
+	<option value="contact">Contact Me</option>
+  </select>
+<br>
+
+<!--checkbox-->
+<label for="hobbies">Do we share any hobbies/interests?</label><br>
+  <input type="checkbox" id="Hobbies1" name="Hobbies1" value="DnD">
+  <label for="Hobbies1">DnD</label><br>
+  <input type="checkbox" id="Hobbies2" name="Hobbies2" value="Drawing">
+  <label for="Hobbies2">Drawing</label><br>
+  <input type="checkbox" id="Hobbies3" name="Hobbies3" value="Video Games">
+  <label for="Hobbies3">Video Games</label><br>
+  <input type="checkbox" id="Hobbies4" name="Hobbies4" value="Nature Walks">
+  <label for="Hobbies4">Nature Walks</label><br><br>
+
+<!--names-->
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required maxlength="30">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+
+<!--Country-->
+
+    <label for="grade">Grade</label>
+    <select id="grade" name="grade">
+      <option value="freshman">Freshman</option>
+      <option value="sophomore">Sophomore</option>
+      <option value="junior">Junior</option>
+	  <option value="senior">Senior</option>
+    </select><br>
+	
+<!--Email-->
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email"><br><br>
+
+  <!--Text Area-->
+<label for="Feedback">Please tell me your thoughts on my site! (min character: 30)</label><br>
+<input type="textarea" style="width:200px; height:200px;" minlength="30" required>
+</textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</center>
+
+</body>
+
+</html>

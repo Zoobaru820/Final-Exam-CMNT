@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="assets/stylesheets/indexStyles.css">
+</head>
+<style>
+
+</style>
+<body>
+
+<nav>
+<div class="header">
+Zoe Albers' Totally Cool Website</div>
+
+<div class="three"><kbd>
+<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="aboutMe.html">About Me</a></li>
+  <li><a href="biography.html">Biography</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact Me</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Social Medias!</a>
+    <div class="dropdown-content">
+      <a href="https://www.instagram.com/zoobiedoo820/?igsh=ZGN5NGgxaXdwam0z&utm_source=qr">Instagram</a>
+      <a href="https://m.facebook.com/profile.php?id=100024755714990">Facebook</a>
+    </div>
+  </li>
+</ul>
+</nav>
+
+</kbd></div>
+<h3>I graduate in: </h3>
+
+<h3 id="demo"></h3>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 18, 2027 16:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<p>Before I chose Web Development, I looked into:</p>
+
+<center>
+
+<div class="ol">
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</div>
+</center>
+
+<h6 class="footer">
+<a href="contact.html">
+Want to get in touch? Press me!</h6>
+</a>
+
+</body>
+
+</html>

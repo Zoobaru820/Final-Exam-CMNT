@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="assets/stylesheets/aboutMe.css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<style>
+h1   {
+float: left;
+padding-left: 100px;
+
+}
+
+div.gallery {
+ display: inline-block;
+  margin: 30px;
+  border: 5px solid #735D78;
+  float: center;
+  align: center;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 5px outset #735D78;
+  margin: 75px;
+}
+
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+
+<body onLoad="MM_preloadImages('assets/images/stickyNote.png')">
+<div class="header">
+Zoe Albers' Totally Cool Website</div>
+
+<div class="three"><kbd>
+<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="aboutMe.html">About Me</a></li>
+  <li><a href="biography.html">Biography</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact Me</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Social Medias!</a>
+    <div class="dropdown-content">
+      <a href="https://www.instagram.com/zoobiedoo820/?igsh=ZGN5NGgxaXdwam0z&utm_source=qr">Instagram</a>
+      <a href="https://m.facebook.com/profile.php?id=100024755714990">Facebook</a>
+    </div>
+  </li>
+</ul>
+</kbd></div>
+
+<h1><img src="assets/images/zoeNeut.png" alt="" id="Image1" onMouseOver="MM_swapImgRestore();MM_swapImage('Image1','','assets/images/zoeJump.png',1)"></h1>
+
+<p>Hello!<br>
+My Name is Zoe Albers, and welcome to my totally awesome site. I am a Web Development major! Although that wasn't always my primary interest.
+I have many interests, most of them relating to art or video games!<br>I'm (for the most part) a very relaxed gamer, being more interested in the casual, open-world explorative games.
+When I was a kid, Minecraft was my primary interest, and it has still been my most played game to this day. However, I've found the time to practice my personal art skills! I'll include of a few of my favorite projects below!<br>
+
+Aside from art, I've also become a DnD fan! I've been in a compaign for two years now with some of my closest friends. I play an Eladrin Cleric!<br>
+
+Outside of these hobbies, I am currently working here at the University! I work at the IT Service Desk, where I help students and staff alike troubleshoot their technical needs!
+I love it there- I believe it gives me an amazing amount of experience for the field I want to someday work in, as well as it's allowed me to build a strong team bond.
+</p>
+
+
+
+
+<div class="gallery">
+  <a target="_blank" href="assets/images/forest.png">
+    <img src="assets/images/forest.png" alt="Cinque Terre" width="300" height="400">
+  </a>
+  <div class="desc">This is a self-portrait based off of a real image I took of myself!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/images/field.png">
+    <img src="assets/images/field.png" alt="Forest" width="300" height="400">
+  </a>
+  <div class="desc">I wanted to practice warm colors in outside settings! I draw a lot of self-portraits to practice!</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="https://forgottenrealms.fandom.com/wiki/Moon_elf">
+    <img src="assets/images/rue.png" alt="Northern Lights" width="300" height="400">
+  </a>
+  <div class="desc">This is my DnD character! Her name is Al'Heart Ruesh!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/images/minecraft.png">
+    <img src="assets/images/minecraft.png" alt="Mountains" width="300" height="400">
+  </a>
+  <div class="desc">This is fanart of my own Minecraft skin interacting with a villager in my shared realm!</div>
+</div>
+
+
+<h6 class="footer">I'm a nerd, I know haha</h6>
+
+
+
+</body>
+
+</html>
+
